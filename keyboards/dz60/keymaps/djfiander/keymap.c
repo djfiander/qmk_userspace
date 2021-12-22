@@ -2,8 +2,6 @@
 
 #include "djf_dz60.h"
 
-#define _______ KC_TRNS
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	LAYOUT_60_ansi_djf(
