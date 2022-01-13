@@ -4,6 +4,8 @@
 
 #include QMK_KEYBOARD_H
 
+#ifdef RGBLIGHT_LAYERS
+
 // Light LEDs 0 to 2 and 14 to 15 red when caps lock is
 // active. Hard to ignore!
 const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
@@ -25,3 +27,4 @@ bool led_update_user(led_t led_state) {
     rgblight_set_layer_state(0, led_state.caps_lock);
     return true;
 }
+#endif
