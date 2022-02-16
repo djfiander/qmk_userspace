@@ -7,12 +7,12 @@ ifeq ($(strip $(RGBLIGHT_ENABLE)), yes)
   SRC += djfiander.c
 endif
 
-EXTRA_FLAGS += -flto
+LTO_ENABLE = yes
 
 MOUSEKEY_ENABLE = no
+EXTRAKEY_ENABLE = no
 SLEEP_LED_ENABLE= no
 NKRO_ENABLE = no		# NKRO breaks caps lock LED status
 BACKLIGHT_ENABLE = no
 BLUETOOTH_ENABLE = no
 AUDIO_ENABLE = no
-
