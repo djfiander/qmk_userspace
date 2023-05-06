@@ -21,5 +21,3 @@
 
 #define LED_PIN_ON_STATE 1 /* 1 for HIGH (default), 0 for LOW */
 #define LED_CAPS_LOCK_PIN A10
-
-#define UNUSED_PINS
