@@ -9,7 +9,6 @@ endif
 
 LTO_ENABLE = yes
 
-MOUSEKEY_ENABLE = no
 EXTRAKEY_ENABLE = no
 SLEEP_LED_ENABLE= no
 NKRO_ENABLE = no		# NKRO breaks caps lock LED status
