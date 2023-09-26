@@ -31,16 +31,6 @@
  * My standard keymaps
  */
 
-// mod-tap keys
-#define CTL_CAPS LCTL_T(KC_CAPS)
-#define CTL_APP  LCTL_T(KC_APP)
-#define ALT_ESC  LALT_T(KC_ESC)
-#define CTL_ENT  RCTL_T(KC_ENT)
-#define CTL_ESC  LCTL_T(KC_ESC)
-
-#define MEH_APP MEH_T(KC_APP)
-#define FL_CAPS LT(1, KC_CAPS)
-
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
@@ -49,6 +39,16 @@
 #define _FL 1
 #define _PL 2
 #define _RL 3
+
+// mod-tap keys
+#define CTL_CAPS LCTL_T(KC_CAPS)
+#define CTL_APP  LCTL_T(KC_APP)
+#define ALT_ESC  LALT_T(KC_ESC)
+#define CTL_ENT  RCTL_T(KC_ENT)
+#define CTL_ESC  LCTL_T(KC_ESC)
+
+#define MEH_APP MEH_T(KC_APP)
+#define FL_CAPS LT(_FL, KC_CAPS)
 
 #define DJF_ANSI_65 \
 { \
