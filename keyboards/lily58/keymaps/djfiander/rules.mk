@@ -1,5 +1,6 @@
 CONVERT_TO=promicro_rp2040
 
+TRI_LAYER_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 MOUSEKEY_ENABLE = yes        # Mouse keys
 RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight.
