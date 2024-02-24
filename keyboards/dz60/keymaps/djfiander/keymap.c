@@ -6,14 +6,6 @@
 #define PAGE  2
 #define RESET 3
 
-// mod/layer-tap keys
-#define CTL_CAPS LCTL_T(KC_CAPS)
-#define CTL_APP  LCTL_T(KC_APP)
-#define ALT_ESC  LALT_T(KC_ESC)
-#define MEH_APP  MEH_T(KC_APP)
-#define FL_CAPS  LT(FUNC, KC_CAPS)
-#define CTL_ENT  RCTL_T(KC_ENT)
-
 // Left-hand home row mods
 #define HOME_A LGUI_T(KC_A)
 #define HOME_S LALT_T(KC_S)
