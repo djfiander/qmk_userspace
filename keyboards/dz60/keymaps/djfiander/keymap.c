@@ -25,8 +25,7 @@
 #define FUNCL   MO(FUNC)
 #define PAGEL   MO(PAGE)
 #define RESETL  MO(RESET)
-/* Ctrl when held, ESC when pressed */
-#define CTLESC  MT(KC_LCTL, KC_ESC)
+#define FL_CAPS LT(FUNC, KC_CAPS)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[BASE] = LAYOUT_60_ansi(
@@ -38,9 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[FUNC] = LAYOUT_60_ansi(
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
-		CTL_ALT,    _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_PSCR, _______, _______, _______,
-		_______,          _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT,_______, _______, _______,
-        _______,          _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
+		CTL_ALT,    KC_MS_BTN2,  KC_MS_UP, KC_MS_BTN1, _______, _______, _______, _______, _______, _______, KC_PSCR, _______, _______, _______,
+		_______,    KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT      , _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT,_______, _______, _______,
+        _______,    _______, _______, _______      , _______, _______, _______, _______, _______, _______, _______,          _______,
 		_______, PAGEL, _______,                   _______,                                     _______, _______, RESETL, _______),
 
     [PAGE] = LAYOUT_60_ansi(
