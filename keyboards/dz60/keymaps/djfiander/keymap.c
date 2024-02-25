@@ -22,7 +22,7 @@
 
 // Complicated key shortcuts
 #define CTL_ALT LCTL(KC_LALT)
-#define FUNCL   MO(FUNCTION)
+#define FUNCL   MO(FUNC)
 #define PAGEL   MO(PAGE)
 #define RESETL  MO(RESET)
 /* Ctrl when held, ESC when pressed */
