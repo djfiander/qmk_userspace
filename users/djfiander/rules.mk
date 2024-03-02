@@ -13,4 +13,3 @@ SLEEP_LED_ENABLE= no
 NKRO_ENABLE = no		# NKRO breaks caps lock LED status
 #BACKLIGHT_ENABLE = no
 AUDIO_ENABLE = no
-VIA_ENABLE = yes
