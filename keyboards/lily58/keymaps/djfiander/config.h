@@ -7,23 +7,25 @@
 // #define MASTER_RIGHT
 // #define EE_HANDS
 
-/* #define QUICK_TAP_TERM 0 */
-/* #define TAPPING_TERM 100 */
-#define TAPPING_TERM 200
-
 /* Home row mods */
+#define TAPPING_TERM 200
+#define QUICK_TAP_TERM 0
+
+#ifdef HOLD_ON_OTHER_KEY_PRESS
+#undef HOLD_ON_OTHER_KEY_PRESS
+#endif
+
 /* Left-hand home row mods */
-#define GUI_A LGUI_T(KC_A)
-#define ALT_S LALT_T(KC_S)
-#define SFT_D LSFT_T(KC_D)
-#define CTL_F LCTL_T(KC_F)
+#define HOME_A LGUI_T(KC_A)
+#define HOME_S LALT_T(KC_S)
+#define HOME_D LCTL_T(KC_D)
+#define HOME_F LSFT_T(KC_F)
 
 /* Right-hand home row mods */
-#define CTL_J RCTL_T(KC_J)
-#define SFT_K RSFT_T(KC_K)
-#define ALT_L LALT_T(KC_L)
-#define GUI_SCLN RGUI_T(KC_SCLN)
-
+#define HOME_J RSFT_T(KC_J)
+#define HOME_K RCTL_T(KC_K)
+#define HOME_L LALT_T(KC_L)
+#define HOME_SCLN RGUI_T(KC_SCLN)
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
