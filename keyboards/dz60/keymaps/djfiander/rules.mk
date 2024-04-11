@@ -1,3 +1,4 @@
+VIA_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 TRI_LAYER_ENABLE = yes
 USER_NAME := djfiander
