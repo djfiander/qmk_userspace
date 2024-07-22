@@ -48,6 +48,9 @@
 #define CTL_ESC  LCTL_T(KC_ESC)
 
 #define MEH_APP MEH_T(KC_APP)
+#ifndef CTL_ALT
+#    define CTL_ALT LCTL(KC_LALT)
+#endif
 #define DJF_ANSI_FL_CAPS LT(DJF_ANSI_65_FL, KC_CAPS)
 
 #define DJF_ANSI_65 \
@@ -87,7 +90,7 @@
      */ \
     [DJF_ANSI_65_FL] = LAYOUT_65_ansi( \
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______,  KC_INS, \
-        CLT_ALT, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_PSCR, _______, _______, _______, KC_END, \
+        CTL_ALT, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_PSCR, _______, _______, _______, KC_END, \
         _______,         _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, _______, _______,          _______, _______, \
         KC_MEH,          _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______,         KC_BTN1,  KC_MS_U, KC_BTN2, \
         _______, MO(DJF_ANSI_65_PL),  _______,                            _______,       _______, _______, MO(DJF_ANSI_65_RL), KC_MS_L, KC_MS_D, KC_MS_R), \
