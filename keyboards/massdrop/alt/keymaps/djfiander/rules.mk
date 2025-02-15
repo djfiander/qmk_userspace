@@ -1,0 +1,3 @@
+RGBLIGHT_ENABLE = no		# No underglow
+MOUSEKEY_ENABLE = yes
+EXTRA_KEY_ENABLE = no
